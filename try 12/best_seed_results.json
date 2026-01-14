@@ -1,0 +1,29 @@
+{
+  "features": [
+    "FCC",
+    "masa_vs_sc"
+  ],
+  "feature_names": [
+    "FCC",
+    "Masa VS/SC (g/m\u00b2)"
+  ],
+  "best_C": 0.5,
+  "best_threshold": 0.5017046775699253,
+  "seed": 36,
+  "performance_score": 0.8082804232804233,
+  "fairness_score": 0.7004728275075065,
+  "combined_score": 0.7543766253939649,
+  "metrics": {
+    "auc": 0.8285714285714286,
+    "accuracy": 0.6481481481481481,
+    "recall": 1.0
+  },
+  "fairness_metrics": {
+    "overfitting_gap": -0.23928571428571432,
+    "calibration_error": 0.2887627864283341,
+    "brier_score": 0.2273893598026627,
+    "overfitting_fairness": 1.4785714285714286,
+    "calibration_fairness": 0.0,
+    "brier_fairness": 0.5452212803946745
+  }
+}

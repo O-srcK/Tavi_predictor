@@ -1,0 +1,22 @@
+{
+  "features": [
+    "FCC",
+    "masa_vs_sc"
+  ],
+  "feature_names": [
+    "FCC",
+    "Masa VS/SC (g/m\u00b2)"
+  ],
+  "C": 0.5,
+  "threshold": 0.5000000000000002,
+  "seed": 36,
+  "metrics": {
+    "auc": 0.8285714285714286,
+    "accuracy": 0.6481481481481481,
+    "recall": 1.0
+  },
+  "fairness_score": 0.7004728275075065,
+  "performance_score": 0.8082804232804233,
+  "combined_score": 0.7543766253939649,
+  "threshold_source": "config.json"
+}

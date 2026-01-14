@@ -1,0 +1,1141 @@
+[
+  {
+    "seed": 0,
+    "performance_score": 0.587562358276644,
+    "fairness_score": 0.41136679646021806,
+    "combined_score": 0.4994645773684311,
+    "metrics": {
+      "auc": 0.5591836734693878,
+      "accuracy": 0.6111111111111112,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.12350863422291991,
+      "calibration_error": 0.3331924388460744,
+      "brier_score": 0.22456574040361515
+    },
+    "best_threshold": 0.49327280710790095
+  },
+  {
+    "seed": 1,
+    "performance_score": 0.733522297808012,
+    "fairness_score": 0.6294432585971976,
+    "combined_score": 0.6814827782026048,
+    "metrics": {
+      "auc": 0.7551020408163265,
+      "accuracy": 0.5185185185185185,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.15688775510204067,
+      "calibration_error": 0.34918205183973383,
+      "brier_score": 0.24016736371108718
+    },
+    "best_threshold": 0.5017724451669116
+  },
+  {
+    "seed": 2,
+    "performance_score": 0.7203628117913833,
+    "fairness_score": 0.5529559309773002,
+    "combined_score": 0.6366593713843418,
+    "metrics": {
+      "auc": 0.689795918367347,
+      "accuracy": 0.5555555555555556,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.05792778649921515,
+      "calibration_error": 0.47774573210416155,
+      "brier_score": 0.23346574555518002
+    },
+    "best_threshold": 0.48977075449493396
+  },
+  {
+    "seed": 3,
+    "performance_score": 0.5702872260015117,
+    "fairness_score": 0.437966312447973,
+    "combined_score": 0.5041267692247424,
+    "metrics": {
+      "auc": 0.5877551020408163,
+      "accuracy": 0.8148148148148148,
+      "recall": 0.2
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.0750196232339091,
+      "calibration_error": 0.4502532142141762,
+      "brier_score": 0.25504497241224927
+    },
+    "best_threshold": 0.6583634455853382
+  },
+  {
+    "seed": 4,
+    "performance_score": 0.7498715041572184,
+    "fairness_score": 0.5997381225897349,
+    "combined_score": 0.6748048133734766,
+    "metrics": {
+      "auc": 0.726530612244898,
+      "accuracy": 0.7407407407407407,
+      "recall": 0.8
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.1063383045525903,
+      "calibration_error": 0.3323254085746789,
+      "brier_score": 0.21333130263084343
+    },
+    "best_threshold": 0.5081215832211744
+  },
+  {
+    "seed": 5,
+    "performance_score": 0.5955291005291006,
+    "fairness_score": 0.34360329956926483,
+    "combined_score": 0.4695662000491827,
+    "metrics": {
+      "auc": 0.5142857142857142,
+      "accuracy": 0.6851851851851852,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.1931318681318681,
+      "calibration_error": 0.4622311979649395,
+      "brier_score": 0.2547280148131017
+    },
+    "best_threshold": 0.5294921572084088
+  },
+  {
+    "seed": 6,
+    "performance_score": 0.6488208616780045,
+    "fairness_score": 0.4396320278464507,
+    "combined_score": 0.5442264447622276,
+    "metrics": {
+      "auc": 0.6081632653061224,
+      "accuracy": 0.4444444444444444,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.07590266875981166,
+      "calibration_error": 0.4614118324715747,
+      "brier_score": 0.24911459286424986
+    },
+    "best_threshold": 0.4069906701538155
+  },
+  {
+    "seed": 7,
+    "performance_score": 0.5118783068783068,
+    "fairness_score": 0.37284884158261883,
+    "combined_score": 0.4423635742304628,
+    "metrics": {
+      "auc": 0.4857142857142857,
+      "accuracy": 0.9074074074074074,
+      "recall": 0.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.18049450549450546,
+      "calibration_error": 0.34883100773683207,
+      "brier_score": 0.20688888505444197
+    },
+    "best_threshold": 0.6583634455853382
+  },
+  {
+    "seed": 8,
+    "performance_score": 0.6829591836734694,
+    "fairness_score": 0.509081866632504,
+    "combined_score": 0.5960205251529866,
+    "metrics": {
+      "auc": 0.6448979591836734,
+      "accuracy": 0.5,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.004788069073783374,
+      "calibration_error": 0.4661827385898721,
+      "brier_score": 0.23687147156630695
+    },
+    "best_threshold": 0.4661410772991848
+  },
+  {
+    "seed": 9,
+    "performance_score": 0.6611035525321239,
+    "fairness_score": 0.5503448829135485,
+    "combined_score": 0.6057242177228362,
+    "metrics": {
+      "auc": 0.689795918367347,
+      "accuracy": 0.8148148148148148,
+      "recall": 0.4
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.05518053375196241,
+      "calibration_error": 0.4472962207181128,
+      "brier_score": 0.23449886022005367
+    },
+    "best_threshold": 0.5914897385762262
+  },
+  {
+    "seed": 10,
+    "performance_score": 0.5803968253968255,
+    "fairness_score": 0.35509014957738727,
+    "combined_score": 0.46774348748710637,
+    "metrics": {
+      "auc": 0.48571428571428577,
+      "accuracy": 0.3888888888888889,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.18049450549450552,
+      "calibration_error": 0.47136143794564356,
+      "brier_score": 0.2512856150675208
+    },
+    "best_threshold": 0.37600779107508303
+  },
+  {
+    "seed": 11,
+    "performance_score": 0.6380272108843538,
+    "fairness_score": 0.5015484267424908,
+    "combined_score": 0.5697878188134222,
+    "metrics": {
+      "auc": 0.636734693877551,
+      "accuracy": 0.6666666666666666,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.0007456828885400446,
+      "calibration_error": 0.3605546863605875,
+      "brier_score": 0.24762029892085333
+    },
+    "best_threshold": 0.5462315314845527
+  },
+  {
+    "seed": 12,
+    "performance_score": 0.6587868480725625,
+    "fairness_score": 0.4818892924830865,
+    "combined_score": 0.5703380702778245,
+    "metrics": {
+      "auc": 0.6122448979591837,
+      "accuracy": 0.6111111111111112,
+      "recall": 0.8
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.03610675039246469,
+      "calibration_error": 0.37821686842832763,
+      "brier_score": 0.22306326800735451
+    },
+    "best_threshold": 0.4866493280879947
+  },
+  {
+    "seed": 13,
+    "performance_score": 0.5086130007558579,
+    "fairness_score": 0.34409168425709635,
+    "combined_score": 0.42635234250647713,
+    "metrics": {
+      "auc": 0.4775510204081633,
+      "accuracy": 0.9074074074074074,
+      "recall": 0.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.22231161695447405,
+      "calibration_error": 0.32050625824296486,
+      "brier_score": 0.19514755544831103
+    },
+    "best_threshold": 0.7124671554666693
+  },
+  {
+    "seed": 14,
+    "performance_score": 0.5994293272864702,
+    "fairness_score": 0.43223704140624597,
+    "combined_score": 0.5158331843463582,
+    "metrics": {
+      "auc": 0.5795918367346939,
+      "accuracy": 0.9074074074074074,
+      "recall": 0.2
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.09623233908948192,
+      "calibration_error": 0.43176947646704666,
+      "brier_score": 0.2269427183054214
+    },
+    "best_threshold": 0.6402327796938724
+  },
+  {
+    "seed": 15,
+    "performance_score": 0.7534315948601662,
+    "fairness_score": 0.7037839208588692,
+    "combined_score": 0.7286077578595177,
+    "metrics": {
+      "auc": 0.8326530612244898,
+      "accuracy": 0.6296296296296297,
+      "recall": 0.8
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.24542778649921504,
+      "calibration_error": 0.43212281767169514,
+      "brier_score": 0.23139577085125715
+    },
+    "best_threshold": 0.5162522049468724
+  },
+  {
+    "seed": 16,
+    "performance_score": 0.7237263794406652,
+    "fairness_score": 0.5922362205049465,
+    "combined_score": 0.6579812999728059,
+    "metrics": {
+      "auc": 0.7306122448979592,
+      "accuracy": 0.5185185185185185,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.10629905808477236,
+      "calibration_error": 0.38883482324919055,
+      "brier_score": 0.23200756490717872
+    },
+    "best_threshold": 0.48665130428933845
+  },
+  {
+    "seed": 17,
+    "performance_score": 0.4934807256235828,
+    "fairness_score": 0.3221674946987425,
+    "combined_score": 0.40782411016116266,
+    "metrics": {
+      "auc": 0.44897959183673475,
+      "accuracy": 0.6111111111111112,
+      "recall": 0.4
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.22409733124018838,
+      "calibration_error": 0.45824543098195497,
+      "brier_score": 0.246386600772767
+    },
+    "best_threshold": 0.5167228379006623
+  },
+  {
+    "seed": 18,
+    "performance_score": 0.5433597883597884,
+    "fairness_score": 0.3419914916115016,
+    "combined_score": 0.44267563998564496,
+    "metrics": {
+      "auc": 0.48571428571428577,
+      "accuracy": 0.42592592592592593,
+      "recall": 0.8
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.20041208791208787,
+      "calibration_error": 0.4478705919573587,
+      "brier_score": 0.24419709514707033
+    },
+    "best_threshold": 0.41814204734645305
+  },
+  {
+    "seed": 19,
+    "performance_score": 0.7025510204081633,
+    "fairness_score": 0.5503679432445272,
+    "combined_score": 0.6264594818263453,
+    "metrics": {
+      "auc": 0.6938775510204082,
+      "accuracy": 0.5,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.06956436420722134,
+      "calibration_error": 0.4530000127318982,
+      "brier_score": 0.26320887030312473
+    },
+    "best_threshold": 0.4871441981053616
+  },
+  {
+    "seed": 20,
+    "performance_score": 0.6740173847316705,
+    "fairness_score": 0.5529128020503888,
+    "combined_score": 0.6134650933910297,
+    "metrics": {
+      "auc": 0.6734693877551021,
+      "accuracy": 0.8703703703703703,
+      "recall": 0.4
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.05327708006279441,
+      "calibration_error": 0.47118438846681476,
+      "brier_score": 0.2242721549996169
+    },
+    "best_threshold": 0.6249265920807822
+  },
+  {
+    "seed": 21,
+    "performance_score": 0.7482388510959941,
+    "fairness_score": 0.5865438048946706,
+    "combined_score": 0.6673913279953323,
+    "metrics": {
+      "auc": 0.7224489795918368,
+      "accuracy": 0.7407407407407407,
+      "recall": 0.8
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.10019623233908959,
+      "calibration_error": 0.3821733227632982,
+      "brier_score": 0.23403295244150282
+    },
+    "best_threshold": 0.5369619355070739
+  },
+  {
+    "seed": 22,
+    "performance_score": 0.7739455782312925,
+    "fairness_score": 0.5913255584963608,
+    "combined_score": 0.6826355683638267,
+    "metrics": {
+      "auc": 0.726530612244898,
+      "accuracy": 0.6666666666666666,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.11595368916797488,
+      "calibration_error": 0.3855201684281958,
+      "brier_score": 0.25359348209504773
+    },
+    "best_threshold": 0.54762005459233
+  },
+  {
+    "seed": 23,
+    "performance_score": 0.6269160997732427,
+    "fairness_score": 0.49072165541562845,
+    "combined_score": 0.5588188775944356,
+    "metrics": {
+      "auc": 0.6367346938775511,
+      "accuracy": 0.7777777777777778,
+      "recall": 0.4
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.023979591836734704,
+      "calibration_error": 0.3611309110469599,
+      "brier_score": 0.22523667778745954
+    },
+    "best_threshold": 0.5369277678793712
+  },
+  {
+    "seed": 24,
+    "performance_score": 0.6572789115646258,
+    "fairness_score": 0.583344706273931,
+    "combined_score": 0.6203118089192784,
+    "metrics": {
+      "auc": 0.726530612244898,
+      "accuracy": 0.3333333333333333,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.0974097331240189,
+      "calibration_error": 0.43679697052637656,
+      "brier_score": 0.23645770056321053
+    },
+    "best_threshold": 0.4291837871996275
+  },
+  {
+    "seed": 25,
+    "performance_score": 0.7837414965986395,
+    "fairness_score": 0.6166076131507419,
+    "combined_score": 0.7001745548746907,
+    "metrics": {
+      "auc": 0.7510204081632654,
+      "accuracy": 0.6666666666666666,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.1452511773940346,
+      "calibration_error": 0.5237175629292429,
+      "brier_score": 0.24898332191121464
+    },
+    "best_threshold": 0.5288102982002133
+  },
+  {
+    "seed": 26,
+    "performance_score": 0.6217006802721089,
+    "fairness_score": 0.445563315755995,
+    "combined_score": 0.5336319980140519,
+    "metrics": {
+      "auc": 0.5959183673469388,
+      "accuracy": 0.6666666666666666,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.07097723704866565,
+      "calibration_error": 0.4324258049878337,
+      "brier_score": 0.24413723651268115
+    },
+    "best_threshold": 0.5394670569423714
+  },
+  {
+    "seed": 27,
+    "performance_score": 0.7043310657596372,
+    "fairness_score": 0.6121718384000834,
+    "combined_score": 0.6582514520798604,
+    "metrics": {
+      "auc": 0.7469387755102042,
+      "accuracy": 0.4444444444444444,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.12399921507064371,
+      "calibration_error": 0.48069101831285527,
+      "brier_score": 0.21756883414107897
+    },
+    "best_threshold": 0.42918454683007073
+  },
+  {
+    "seed": 28,
+    "performance_score": 0.5279365079365079,
+    "fairness_score": 0.41014053582263055,
+    "combined_score": 0.46903852187956924,
+    "metrics": {
+      "auc": 0.5142857142857142,
+      "accuracy": 0.7777777777777778,
+      "recall": 0.2
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.12376373626373638,
+      "calibration_error": 0.3624699259261046,
+      "brier_score": 0.227121187915951
+    },
+    "best_threshold": 0.5708246266335596
+  },
+  {
+    "seed": 29,
+    "performance_score": 0.706254724111867,
+    "fairness_score": 0.5320951992056454,
+    "combined_score": 0.6191749616587562,
+    "metrics": {
+      "auc": 0.6938775510204083,
+      "accuracy": 0.7962962962962963,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.04552590266875989,
+      "calibration_error": 0.34783299460795847,
+      "brier_score": 0.26081380732340637
+    },
+    "best_threshold": 0.5708246266335596
+  },
+  {
+    "seed": 30,
+    "performance_score": 0.5610997732426304,
+    "fairness_score": 0.36463477307132514,
+    "combined_score": 0.46286727315697773,
+    "metrics": {
+      "auc": 0.5346938775510204,
+      "accuracy": 0.2777777777777778,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.16104788069073783,
+      "calibration_error": 0.4689597033562574,
+      "brier_score": 0.2663173059402115
+    },
+    "best_threshold": 0.3209799113401127
+  },
+  {
+    "seed": 31,
+    "performance_score": 0.6162660619803477,
+    "fairness_score": 0.40931061895604876,
+    "combined_score": 0.5127883404681982,
+    "metrics": {
+      "auc": 0.5591836734693878,
+      "accuracy": 0.4074074074074074,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.1283163265306122,
+      "calibration_error": 0.34996151635946315,
+      "brier_score": 0.2200907995486538
+    },
+    "best_threshold": 0.3695275395360789
+  },
+  {
+    "seed": 32,
+    "performance_score": 0.5255971277399849,
+    "fairness_score": 0.38337162179950257,
+    "combined_score": 0.45448437476974374,
+    "metrics": {
+      "auc": 0.5061224489795918,
+      "accuracy": 0.35185185185185186,
+      "recall": 0.8
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.15115777080062798,
+      "calibration_error": 0.4686899223593676,
+      "brier_score": 0.23925540389998756
+    },
+    "best_threshold": 0.37569723637573166
+  },
+  {
+    "seed": 33,
+    "performance_score": 0.6005744520030234,
+    "fairness_score": 0.39581781854973985,
+    "combined_score": 0.4981961352763816,
+    "metrics": {
+      "auc": 0.5755102040816327,
+      "accuracy": 0.6296296296296297,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.11473704866562007,
+      "calibration_error": 0.45558350694252886,
+      "brier_score": 0.28098135629441034
+    },
+    "best_threshold": 0.5694496284652746
+  },
+  {
+    "seed": 34,
+    "performance_score": 0.523087679516251,
+    "fairness_score": 0.3553832551999533,
+    "combined_score": 0.43923546735810215,
+    "metrics": {
+      "auc": 0.5183673469387755,
+      "accuracy": 0.7592592592592593,
+      "recall": 0.2
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.18355572998430147,
+      "calibration_error": 0.4516646457023471,
+      "brier_score": 0.24443040203151384
+    },
+    "best_threshold": 0.5708240797694858
+  },
+  {
+    "seed": 35,
+    "performance_score": 0.6622713529856387,
+    "fairness_score": 0.47369186143513675,
+    "combined_score": 0.5679816072103877,
+    "metrics": {
+      "auc": 0.6163265306122448,
+      "accuracy": 0.7592592592592593,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.04438775510204096,
+      "calibration_error": 0.4650484201342694,
+      "brier_score": 0.22699483620807626
+    },
+    "best_threshold": 0.539098919204918
+  },
+  {
+    "seed": 36,
+    "performance_score": 0.8082804232804233,
+    "fairness_score": 0.7004728275075065,
+    "combined_score": 0.7543766253939649,
+    "metrics": {
+      "auc": 0.8285714285714286,
+      "accuracy": 0.6481481481481481,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.23928571428571432,
+      "calibration_error": 0.2887627864283341,
+      "brier_score": 0.2273893598026627
+    },
+    "best_threshold": 0.5017046775699253
+  },
+  {
+    "seed": 37,
+    "performance_score": 0.6058390022675737,
+    "fairness_score": 0.46630778722612876,
+    "combined_score": 0.5360733947468512,
+    "metrics": {
+      "auc": 0.6326530612244898,
+      "accuracy": 0.7222222222222222,
+      "recall": 0.4
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.03630298273155419,
+      "calibration_error": 0.44772742799550064,
+      "brier_score": 0.2616245664715698
+    },
+    "best_threshold": 0.5588575189240471
+  },
+  {
+    "seed": 38,
+    "performance_score": 0.6771126228269085,
+    "fairness_score": 0.5508459972995663,
+    "combined_score": 0.6139793100632374,
+    "metrics": {
+      "auc": 0.7020408163265306,
+      "accuracy": 0.7037037037037037,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.05574960753532188,
+      "calibration_error": 0.29156125278297085,
+      "brier_score": 0.2343842218217279
+    },
+    "best_threshold": 0.548001143243681
+  },
+  {
+    "seed": 39,
+    "performance_score": 0.706451247165533,
+    "fairness_score": 0.6403752639535408,
+    "combined_score": 0.6734132555595369,
+    "metrics": {
+      "auc": 0.7591836734693878,
+      "accuracy": 0.7222222222222222,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.1541012558869701,
+      "calibration_error": 0.41894564085197483,
+      "brier_score": 0.20726435189008802
+    },
+    "best_threshold": 0.5051345007936504
+  },
+  {
+    "seed": 40,
+    "performance_score": 0.6736772486772487,
+    "fairness_score": 0.5740142057727033,
+    "combined_score": 0.623845727224976,
+    "metrics": {
+      "auc": 0.7142857142857143,
+      "accuracy": 0.5370370370370371,
+      "recall": 0.8
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.08653846153846156,
+      "calibration_error": 0.4756203964294274,
+      "brier_score": 0.23804140864516493
+    },
+    "best_threshold": 0.4957445270065446
+  },
+  {
+    "seed": 42,
+    "performance_score": 0.8147127739984883,
+    "fairness_score": 0.6717407660231185,
+    "combined_score": 0.7432267700108034,
+    "metrics": {
+      "auc": 0.8122448979591838,
+      "accuracy": 0.6851851851851852,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.2119701726844585,
+      "calibration_error": 0.3952143526538329,
+      "brier_score": 0.24458843031112062
+    },
+    "best_threshold": 0.5357770733864868
+  },
+  {
+    "seed": 50,
+    "performance_score": 0.5969198790627361,
+    "fairness_score": 0.4461542248522511,
+    "combined_score": 0.5215370519574936,
+    "metrics": {
+      "auc": 0.5918367346938775,
+      "accuracy": 0.3148148148148148,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.06544348508634235,
+      "calibration_error": 0.46224913551906893,
+      "brier_score": 0.2537274676966875
+    },
+    "best_threshold": 0.3544167648446688
+  },
+  {
+    "seed": 100,
+    "performance_score": 0.6042063492063492,
+    "fairness_score": 0.47556227441341736,
+    "combined_score": 0.5398843118098833,
+    "metrics": {
+      "auc": 0.6285714285714286,
+      "accuracy": 0.7222222222222222,
+      "recall": 0.4
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.03214285714285725,
+      "calibration_error": 0.4476075688534702,
+      "brier_score": 0.24680859968074206
+    },
+    "best_threshold": 0.5708246266335596
+  },
+  {
+    "seed": 123,
+    "performance_score": 0.6213832199546485,
+    "fairness_score": 0.40753999228859455,
+    "combined_score": 0.5144616061216215,
+    "metrics": {
+      "auc": 0.5673469387755102,
+      "accuracy": 0.5555555555555556,
+      "recall": 0.8
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.11053767660910518,
+      "calibration_error": 0.36910555918575827,
+      "brier_score": 0.26007466606030333
+    },
+    "best_threshold": 0.5231643405565048
+  },
+  {
+    "seed": 200,
+    "performance_score": 0.6816931216931217,
+    "fairness_score": 0.5462869356248613,
+    "combined_score": 0.6139900286589914,
+    "metrics": {
+      "auc": 0.6857142857142857,
+      "accuracy": 0.5925925925925926,
+      "recall": 0.8
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.03667582417582416,
+      "calibration_error": 0.47335185640005684,
+      "brier_score": 0.2076343092894951
+    },
+    "best_threshold": 0.4496041177793193
+  },
+  {
+    "seed": 300,
+    "performance_score": 0.5597354497354496,
+    "fairness_score": 0.4285950898470489,
+    "combined_score": 0.4941652697912493,
+    "metrics": {
+      "auc": 0.5428571428571428,
+      "accuracy": 0.4074074074074074,
+      "recall": 0.8
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.11373626373626378,
+      "calibration_error": 0.34384828166637205,
+      "brier_score": 0.20103974790985019
+    },
+    "best_threshold": 0.36013607457985114
+  },
+  {
+    "seed": 456,
+    "performance_score": 0.7141987906273621,
+    "fairness_score": 0.5768087559189621,
+    "combined_score": 0.6455037732731621,
+    "metrics": {
+      "auc": 0.7183673469387755,
+      "accuracy": 0.6481481481481481,
+      "recall": 0.8
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.08855965463108317,
+      "calibration_error": 0.5622382946420397,
+      "brier_score": 0.23509741946476106
+    },
+    "best_threshold": 0.5087354965031909
+  },
+  {
+    "seed": 500,
+    "performance_score": 0.8065495086923659,
+    "fairness_score": 0.6558066194590159,
+    "combined_score": 0.7311780640756909,
+    "metrics": {
+      "auc": 0.7918367346938775,
+      "accuracy": 0.6851851851851852,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.18675431711145984,
+      "calibration_error": 0.3857862765669265,
+      "brier_score": 0.23399208557538015
+    },
+    "best_threshold": 0.5296722682806857
+  },
+  {
+    "seed": 666,
+    "performance_score": 0.703087679516251,
+    "fairness_score": 0.5667262430846021,
+    "combined_score": 0.6349069613004266,
+    "metrics": {
+      "auc": 0.7183673469387755,
+      "accuracy": 0.7592592592592593,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.08855965463108317,
+      "calibration_error": 0.4457369830858461,
+      "brier_score": 0.26030370155066107
+    },
+    "best_threshold": 0.5708246266335596
+  },
+  {
+    "seed": 777,
+    "performance_score": 0.7919047619047619,
+    "fairness_score": 0.6258002905077855,
+    "combined_score": 0.7088525262062737,
+    "metrics": {
+      "auc": 0.7714285714285715,
+      "accuracy": 0.6666666666666666,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.1581043956043956,
+      "calibration_error": 0.4558456733650596,
+      "brier_score": 0.25170806493932746
+    },
+    "best_threshold": 0.5421006408188278
+  },
+  {
+    "seed": 888,
+    "performance_score": 0.6350302343159485,
+    "fairness_score": 0.5112938567294337,
+    "combined_score": 0.5731620455226911,
+    "metrics": {
+      "auc": 0.6408163265306123,
+      "accuracy": 0.7962962962962963,
+      "recall": 0.4
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -1.9623233909027427e-05,
+      "calibration_error": 0.36861039028473475,
+      "brier_score": 0.2218046046442338
+    },
+    "best_threshold": 0.5353271302889567
+  },
+  {
+    "seed": 999,
+    "performance_score": 0.698140589569161,
+    "fairness_score": 0.5419556422350504,
+    "combined_score": 0.6200481159021057,
+    "metrics": {
+      "auc": 0.689795918367347,
+      "accuracy": 0.7777777777777778,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.0558673469387756,
+      "calibration_error": 0.4369246555676939,
+      "brier_score": 0.2568455882899254
+    },
+    "best_threshold": 0.5993831089570034
+  },
+  {
+    "seed": 1000,
+    "performance_score": 0.7027702191987906,
+    "fairness_score": 0.5522643506172841,
+    "combined_score": 0.6275172849080373,
+    "metrics": {
+      "auc": 0.689795918367347,
+      "accuracy": 0.6481481481481481,
+      "recall": 0.8
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.048999215070643753,
+      "calibration_error": 0.36830218711351237,
+      "brier_score": 0.2173375535980775
+    },
+    "best_threshold": 0.49584310941617527
+  },
+  {
+    "seed": 1234,
+    "performance_score": 0.7187792894935752,
+    "fairness_score": 0.5798744800750839,
+    "combined_score": 0.6493268847843295,
+    "metrics": {
+      "auc": 0.7020408163265306,
+      "accuracy": 0.5370370370370371,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.09764521193092612,
+      "calibration_error": 0.44816770585114024,
+      "brier_score": 0.24560422367414247
+    },
+    "best_threshold": 0.5218813639884129
+  },
+  {
+    "seed": 2026,
+    "performance_score": 0.7968518518518519,
+    "fairness_score": 0.6503852196597414,
+    "combined_score": 0.7236185357557967,
+    "metrics": {
+      "auc": 0.8,
+      "accuracy": 0.6481481481481481,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.185989010989011,
+      "calibration_error": 0.30041701360816986,
+      "brier_score": 0.24601497282866844
+    },
+    "best_threshold": 0.5281469189585388
+  },
+  {
+    "seed": 3141,
+    "performance_score": 0.5116591080876796,
+    "fairness_score": 0.3188984976860839,
+    "combined_score": 0.41527880288688174,
+    "metrics": {
+      "auc": 0.4897959183673469,
+      "accuracy": 0.7592592592592593,
+      "recall": 0.2
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.2327315541601257,
+      "calibration_error": 0.4485295848019836,
+      "brier_score": 0.23729064746453885
+    },
+    "best_threshold": 0.5596699895944892
+  },
+  {
+    "seed": 5000,
+    "performance_score": 0.5646560846560846,
+    "fairness_score": 0.2981573791429195,
+    "combined_score": 0.43140673189950207,
+    "metrics": {
+      "auc": 0.4857142857142857,
+      "accuracy": 0.6296296296296297,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.22994505494505496,
+      "calibration_error": 0.432399154090546,
+      "brier_score": 0.2947164422525914
+    },
+    "best_threshold": 0.5708257993584858
+  },
+  {
+    "seed": 7777,
+    "performance_score": 0.7013567649281935,
+    "fairness_score": 0.5454306625924463,
+    "combined_score": 0.6233937137603199,
+    "metrics": {
+      "auc": 0.6816326530612246,
+      "accuracy": 0.7962962962962963,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.04014913657770802,
+      "calibration_error": 0.3320000691984424,
+      "brier_score": 0.21672161667430032
+    },
+    "best_threshold": 0.5521163504003201
+  },
+  {
+    "seed": 9999,
+    "performance_score": 0.4995238095238095,
+    "fairness_score": 0.2949686317882402,
+    "combined_score": 0.39724622065602483,
+    "metrics": {
+      "auc": 0.4571428571428571,
+      "accuracy": 0.3333333333333333,
+      "recall": 0.8
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.25096153846153857,
+      "calibration_error": 0.4170496593488209,
+      "brier_score": 0.26065534360632253
+    },
+    "best_threshold": 0.35052089329881414
+  },
+  {
+    "seed": 1337,
+    "performance_score": 0.6082993197278912,
+    "fairness_score": 0.47972059231811526,
+    "combined_score": 0.5440099560230032,
+    "metrics": {
+      "auc": 0.6040816326530613,
+      "accuracy": 0.3333333333333333,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.029160125588697072,
+      "calibration_error": 0.3800950647647905,
+      "brier_score": 0.24237826802731777
+    },
+    "best_threshold": 0.3943764761259076
+  },
+  {
+    "seed": 2024,
+    "performance_score": 0.5551549508692366,
+    "fairness_score": 0.40778870752576624,
+    "combined_score": 0.4814718291975014,
+    "metrics": {
+      "auc": 0.5591836734693878,
+      "accuracy": 0.5185185185185185,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.10908555729984293,
+      "calibration_error": 0.401510200438192,
+      "brier_score": 0.2623571165858985
+    },
+    "best_threshold": 0.505205029900311
+  },
+  {
+    "seed": 2025,
+    "performance_score": 0.7447543461829176,
+    "fairness_score": 0.5758328993527978,
+    "combined_score": 0.6602936227678577,
+    "metrics": {
+      "auc": 0.7183673469387755,
+      "accuracy": 0.5925925925925926,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.08443877551020396,
+      "calibration_error": 0.4836368417698356,
+      "brier_score": 0.2292953026384136
+    },
+    "best_threshold": 0.5023145744318128
+  },
+  {
+    "seed": 2027,
+    "performance_score": 0.7707785336356765,
+    "fairness_score": 0.6388005999390356,
+    "combined_score": 0.704789566787356,
+    "metrics": {
+      "auc": 0.7510204081632653,
+      "accuracy": 0.6296296296296297,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.16310832025117739,
+      "calibration_error": 0.4427119446865309,
+      "brier_score": 0.22921514065476595
+    },
+    "best_threshold": 0.502975118536299
+  },
+  {
+    "seed": 2028,
+    "performance_score": 0.6526228269085412,
+    "fairness_score": 0.4916596097014258,
+    "combined_score": 0.5721412183049835,
+    "metrics": {
+      "auc": 0.6408163265306123,
+      "accuracy": 0.7037037037037037,
+      "recall": 0.6
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.021958398744112984,
+      "calibration_error": 0.3565159460982799,
+      "brier_score": 0.22693417825820955
+    },
+    "best_threshold": 0.5357078083984089
+  },
+  {
+    "seed": 2029,
+    "performance_score": 0.7269916855631141,
+    "fairness_score": 0.5940864420151442,
+    "combined_score": 0.6605390637891291,
+    "metrics": {
+      "auc": 0.7387755102040816,
+      "accuracy": 0.5185185185185185,
+      "recall": 1.0
+    },
+    "fairness_metrics": {
+      "overfitting_gap": -0.10278649921507066,
+      "calibration_error": 0.3371254754906665,
+      "brier_score": 0.220356893392281
+    },
+    "best_threshold": 0.4284720974713297
+  },
+  {
+    "seed": 2030,
+    "performance_score": 0.6055933484504913,
+    "fairness_score": 0.4184979714565627,
+    "combined_score": 0.512045659953527,
+    "metrics": {
+      "auc": 0.5510204081632654,
+      "accuracy": 0.8148148148148148,
+      "recall": 0.4
+    },
+    "fairness_metrics": {
+      "overfitting_gap": 0.11450156985871263,
+      "calibration_error": 0.29973666957972345,
+      "brier_score": 0.22475193164116808
+    },
+    "best_threshold": 0.5848320952557828
+  }
+]

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAVI Complication Risk Predictor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+            background: white;
+        }
+        
+        .input-hint {
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .result {
+            margin-top: 30px;
+            padding: 25px;
+            border-radius: 12px;
+            display: none;
+        }
+        
+        .result.show {
+            display: block;
+        }
+        
+        .result.high-risk {
+            background: #fee;
+            border: 2px solid #fcc;
+        }
+        
+        .result.low-risk {
+            background: #efe;
+            border: 2px solid #cfc;
+        }
+        
+        .result-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .result.high-risk .result-title {
+            color: #c00;
+        }
+        
+        .result.low-risk .result-title {
+            color: #0a0;
+        }
+        
+        .risk-percentage {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .result.high-risk .risk-percentage {
+            color: #c00;
+        }
+        
+        .result.low-risk .risk-percentage {
+            color: #0a0;
+        }
+        
+        .result-details {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .result-details div {
+            margin-bottom: 8px;
+        }
+        
+        .result-details strong {
+            color: #333;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .loading.show {
+            display: block;
+        }
+        
+        .error {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fee;
+            border: 2px solid #fcc;
+            border-radius: 8px;
+            color: #c00;
+            display: none;
+        }
+        
+        .error.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TAVI Complication Risk Predictor</h1>
+        <p class="subtitle">Enter patient data to predict post-TAVI complication risk</p>
+        
+        <form id="predictionForm">
+            <div class="form-group">
+                <label for="thresholdPreset">Risk Threshold Preset</label>
+                <select id="thresholdPreset" name="thresholdPreset" class="form-select">
+                    <option value="maximize_recall">Maximize Recall (Safety First)</option>
+                    <option value="maximize_accuracy">Maximize Accuracy</option>
+                    <option value="maximize_combined" selected>Maximize Combined (Recommended)</option>
+                    <option value="maximize_f1">Maximize F1 (Balance)</option>
+                    <option value="youden">Youden's J (Optimal ROC)</option>
+                    <option value="custom">Custom Threshold</option>
+                </select>
+                <div class="input-hint" id="presetDescription">Balances catching complications and overall correctness.</div>
+            </div>
+            
+            <div class="form-group" id="customThresholdGroup" style="display: none;">
+                <label for="customThreshold">Custom Threshold (%)</label>
+                <input type="number" id="customThreshold" name="customThreshold" step="0.1" min="0" max="100" value="45">
+                <div class="input-hint">Enter custom threshold (0-100%). Lower = more sensitive, Higher = more specific.</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="fcc">FCC (Frequency of Conduction)</label>
+                <input type="number" id="fcc" name="fcc" step="0.1" min="0" required>
+                <div class="input-hint">Enter the FCC value (typically 0-100)</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="masa_vs_sc">Masa VS/SC (g/m²)</label>
+                <input type="number" id="masa_vs_sc" name="masa_vs_sc" step="0.1" min="0" required>
+                <div class="input-hint">Enter the Masa VS/SC value (normalized by body surface area)</div>
+            </div>
+            
+            <button type="submit" id="predictBtn">Calculate Risk</button>
+        </form>
+        
+        <div class="loading" id="loading">Calculating risk...</div>
+        
+        <div class="error" id="error"></div>
+        
+        <div class="result" id="result">
+            <div class="result-title" id="resultTitle"></div>
+            <div class="risk-percentage" id="riskPercentage"></div>
+            <div class="result-details" id="resultDetails"></div>
+        </div>
+    </div>
+    
+    <script>
+        const form = document.getElementById('predictionForm');
+        const predictBtn = document.getElementById('predictBtn');
+        const loading = document.getElementById('loading');
+        const error = document.getElementById('error');
+        const result = document.getElementById('result');
+        const resultTitle = document.getElementById('resultTitle');
+        const riskPercentage = document.getElementById('riskPercentage');
+        const resultDetails = document.getElementById('resultDetails');
+        const thresholdPreset = document.getElementById('thresholdPreset');
+        const customThresholdGroup = document.getElementById('customThresholdGroup');
+        const customThreshold = document.getElementById('customThreshold');
+        const presetDescription = document.getElementById('presetDescription');
+        
+        // Load preset descriptions
+        let presetsData = {};
+        fetch('/model_info')
+            .then(r => r.json())
+            .then(data => {
+                presetsData = data.presets || {};
+                updatePresetDescription();
+            });
+        
+        // Show/hide custom threshold input
+        thresholdPreset.addEventListener('change', () => {
+            if (thresholdPreset.value === 'custom') {
+                customThresholdGroup.style.display = 'block';
+            } else {
+                customThresholdGroup.style.display = 'none';
+            }
+            updatePresetDescription();
+        });
+        
+        function updatePresetDescription() {
+            const preset = thresholdPreset.value;
+            if (presetsData[preset]) {
+                presetDescription.textContent = presetsData[preset].description || '';
+            } else if (preset === 'custom') {
+                presetDescription.textContent = 'Set your own threshold value. Lower = more sensitive (catches more), Higher = more specific (fewer false alarms).';
+            }
+        }
+        
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Hide previous results
+            result.classList.remove('show', 'high-risk', 'low-risk');
+            error.classList.remove('show');
+            loading.classList.add('show');
+            predictBtn.disabled = true;
+            
+            const fcc = parseFloat(document.getElementById('fcc').value);
+            const masa_vs_sc = parseFloat(document.getElementById('masa_vs_sc').value);
+            const preset = thresholdPreset.value;
+            const customThresh = preset === 'custom' ? parseFloat(customThreshold.value) / 100 : null;
+            
+            try {
+                // Set preset if needed
+                if (preset !== 'custom') {
+                    await fetch('/set_preset', {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify({preset: preset})
+                    });
+                } else if (customThresh !== null) {
+                    await fetch('/set_preset', {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify({preset: 'custom', threshold: customThresh})
+                    });
+                }
+                
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        fcc: fcc,
+                        masa_vs_sc: masa_vs_sc,
+                        preset: preset === 'custom' ? 'custom' : preset
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (!response.ok) {
+                    throw new Error(data.error || 'Prediction failed');
+                }
+                
+                // Show results
+                loading.classList.remove('show');
+                predictBtn.disabled = false;
+                
+                resultTitle.textContent = data.risk_level;
+                riskPercentage.textContent = data.risk_percentage.toFixed(2) + '%';
+                
+                resultDetails.innerHTML = `
+                    <div><strong>Risk Probability:</strong> ${(data.risk_probability * 100).toFixed(2)}%</div>
+                    <div><strong>Risk Flag:</strong> ${data.risk_flag ? 'Yes (High Risk)' : 'No (Low Risk)'}</div>
+                    <div><strong>Threshold Used:</strong> ${(data.threshold_used * 100).toFixed(2)}%</div>
+                    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">
+                        <strong>Input Values:</strong><br>
+                        FCC: ${data.inputs.fcc}<br>
+                        Masa VS/SC: ${data.inputs.masa_vs_sc} g/m²
+                    </div>
+                `;
+                
+                if (data.risk_flag) {
+                    result.classList.add('show', 'high-risk');
+                } else {
+                    result.classList.add('show', 'low-risk');
+                }
+                
+            } catch (err) {
+                loading.classList.remove('show');
+                predictBtn.disabled = false;
+                error.textContent = 'Error: ' + err.message;
+                error.classList.add('show');
+            }
+        });
+    </script>
+</body>
+</html>
